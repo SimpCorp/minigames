@@ -100,20 +100,31 @@
 
         .counter,
         .dev {
-            position: fixed;
-            bottom: 14px;
-            font-size: .8rem;
-            opacity: .5;
-        }
+    position: fixed;
+    right: 18px;
+    bottom: 14px;
 
-        .counter {
-            left: 18px;
-        }
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.3px;
 
-        .dev {
-            right: 18px;
-            opacity: .18;
-        }
+    color: rgba(255,255,255,0.18);
+    opacity: 0.18;
+
+    user-select: none;
+    cursor: default;
+
+    transition:
+        opacity 0.35s ease,
+        color 0.35s ease,
+        transform 0.35s ease;
+}
+
+.dev:hover {
+    opacity: 1;
+    color: #ffffff;
+    transform: translateY(-1px);
+}
 
         .pixel {
             position: fixed;
